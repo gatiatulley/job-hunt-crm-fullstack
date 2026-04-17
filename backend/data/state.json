@@ -1,0 +1,220 @@
+{
+  "profiles": [
+    {
+      "id": "profilegatiat",
+      "name": "profilegatiat",
+      "is_active": true,
+      "auth_status": "active"
+    },
+    {
+      "id": "backup_profile",
+      "name": "backup_profile",
+      "is_active": false,
+      "auth_status": "inactive"
+    }
+  ],
+  "resumes": [
+    {
+      "id": "resume_pm",
+      "title": "Junior PM / Project Coordinator",
+      "is_active": true
+    },
+    {
+      "id": "resume_ba",
+      "title": "Business Analyst",
+      "is_active": false
+    },
+    {
+      "id": "resume_admin",
+      "title": "Admin / Assistant",
+      "is_active": false
+    }
+  ],
+  "letters": [
+    {
+      "id": "letter_pm",
+      "name": "PM intro",
+      "is_default": true,
+      "content": "Здравствуйте! Меня заинтересовала ваша вакансия. Развиваюсь в направлении project management, умею координировать задачи, структурировать процессы и держать коммуникацию с командой."
+    },
+    {
+      "id": "letter_ba",
+      "name": "Analyst angle",
+      "is_default": false,
+      "content": "Здравствуйте! Ваша вакансия показалась мне интересной. У меня есть опыт описания процессов, сбора требований и работы с документацией и задачами команды."
+    }
+  ],
+  "presets": [
+    {
+      "id": "preset_pm",
+      "name": "Junior PM",
+      "query": "project manager",
+      "or_terms": [
+        "project manager",
+        "project coordinator",
+        "business analyst"
+      ],
+      "and_terms": [
+        "IT"
+      ],
+      "not_terms": [
+        "senior"
+      ],
+      "filters": {
+        "location": "Moscow",
+        "format": "Remote / Hybrid",
+        "experience": "No experience / 1-3 years",
+        "employment": "Full-time / Internship",
+        "salary_from": 70000,
+        "salary_only": true,
+        "excluded": "sales, lead"
+      }
+    }
+  ],
+  "vacancies": [
+    {
+      "id": "vac_1",
+      "title": "Junior Project Manager",
+      "company": "Fintech Lab",
+      "salary": "90 000 – 120 000 ₽",
+      "format": "Remote",
+      "location": "Moscow",
+      "snippet": "Координация задач, документация, работа с командой продукта."
+    },
+    {
+      "id": "vac_2",
+      "title": "Project Coordinator",
+      "company": "Digital Orbit",
+      "salary": "80 000 – 100 000 ₽",
+      "format": "Hybrid",
+      "location": "Moscow",
+      "snippet": "Контроль сроков, работа с Jira, ведение статусов и коммуникаций."
+    },
+    {
+      "id": "vac_3",
+      "title": "Business Analyst Intern",
+      "company": "Nova Systems",
+      "salary": "70 000 ₽",
+      "format": "Office",
+      "location": "Moscow",
+      "snippet": "Сбор требований, описание процессов, поддержка команды аналитики."
+    },
+    {
+      "id": "vac_4",
+      "title": "Junior Product Operations",
+      "company": "Cloud Core",
+      "salary": "95 000 ₽",
+      "format": "Remote",
+      "location": "Saint Petersburg",
+      "snippet": "Операционная поддержка продуктовой команды и аналитика метрик."
+    },
+    {
+      "id": "vac_5",
+      "title": "Product Assistant",
+      "company": "Metro Flow",
+      "salary": "75 000 – 90 000 ₽",
+      "format": "Hybrid",
+      "location": "Moscow",
+      "snippet": "Помощь менеджеру продукта, статусы, таблицы, созвоны, контроль задач."
+    },
+    {
+      "id": "vac_6",
+      "title": "IT Project Assistant",
+      "company": "Pulse Stack",
+      "salary": "85 000 ₽",
+      "format": "Remote",
+      "location": "Moscow",
+      "snippet": "Поддержка проектной команды, митинги, отчётность, контроль дедлайнов."
+    }
+  ],
+  "runs": [
+    {
+      "id": "e8a9800e-91a5-4afb-8a5c-3399e82010eb",
+      "mode": "target",
+      "status": "completed",
+      "target_success": 3,
+      "max_attempts": 10,
+      "attempts": 4,
+      "success": 3,
+      "failed": 1,
+      "skipped": 0,
+      "dry_run": false,
+      "preset_name": "Junior PM",
+      "current_vacancy": "Junior Product Operations",
+      "queue": [
+        {
+          "id": "vac_1",
+          "title": "Junior Project Manager",
+          "company": "Fintech Lab",
+          "salary": "90 000 – 120 000 ₽",
+          "format": "Remote",
+          "location": "Moscow",
+          "snippet": "Координация задач, документация, работа с командой продукта."
+        },
+        {
+          "id": "vac_2",
+          "title": "Project Coordinator",
+          "company": "Digital Orbit",
+          "salary": "80 000 – 100 000 ₽",
+          "format": "Hybrid",
+          "location": "Moscow",
+          "snippet": "Контроль сроков, работа с Jira, ведение статусов и коммуникаций."
+        },
+        {
+          "id": "vac_3",
+          "title": "Business Analyst Intern",
+          "company": "Nova Systems",
+          "salary": "70 000 ₽",
+          "format": "Office",
+          "location": "Moscow",
+          "snippet": "Сбор требований, описание процессов, поддержка команды аналитики."
+        },
+        {
+          "id": "vac_4",
+          "title": "Junior Product Operations",
+          "company": "Cloud Core",
+          "salary": "95 000 ₽",
+          "format": "Remote",
+          "location": "Saint Petersburg",
+          "snippet": "Операционная поддержка продуктовой команды и аналитика метрик."
+        }
+      ],
+      "events": [
+        {
+          "vacancy_id": "vac_1",
+          "title": "Junior Project Manager",
+          "company": "Fintech Lab",
+          "status": "success",
+          "message": "Отклик отправлен",
+          "created_at": "2026-04-17T20:18:07.775801"
+        },
+        {
+          "vacancy_id": "vac_2",
+          "title": "Project Coordinator",
+          "company": "Digital Orbit",
+          "status": "success",
+          "message": "Отклик отправлен",
+          "created_at": "2026-04-17T20:18:08.577717"
+        },
+        {
+          "vacancy_id": "vac_3",
+          "title": "Business Analyst Intern",
+          "company": "Nova Systems",
+          "status": "failed",
+          "message": "Отклик не принят",
+          "created_at": "2026-04-17T20:18:09.378841"
+        },
+        {
+          "vacancy_id": "vac_4",
+          "title": "Junior Product Operations",
+          "company": "Cloud Core",
+          "status": "success",
+          "message": "Отклик отправлен",
+          "created_at": "2026-04-17T20:18:10.180964"
+        }
+      ],
+      "started_at": "2026-04-17T20:18:07.773459",
+      "finished_at": "2026-04-17T20:18:10.180984"
+    }
+  ]
+}
