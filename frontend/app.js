@@ -1,4 +1,4 @@
-const API = 'http://localhost:8000'
+const API = "https://job-hunt-crm-api.onrender.com";
 
 const state = {
   screen: 'dashboard',
